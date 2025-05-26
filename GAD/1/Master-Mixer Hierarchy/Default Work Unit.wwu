@@ -10,29 +10,28 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="AuBus" ID="{524A82F5-081F-4466-848D-F14E4E9A853E}">
+						<Bus Name="Reverb" ID="{7C308A66-0AB8-4E27-BFCA-1341A8136C74}">
 							<ChildrenList>
-								<Bus Name="Reverb" ID="{7C308A66-0AB8-4E27-BFCA-1341A8136C74}">
-									<ChildrenList>
-										<AuxBus Name="Reverb_Gen" ID="{9CE676D1-3FB5-4376-A2FA-31ECF9500B41}">
-											<ObjectLists>
-												<ObjectList Name="Effects">
-													<Reference>
-														<Local>
-															<EffectSlot Name="" ID="{24C6F60F-8DDD-4B32-927A-36977854F4DA}" ShortID="462398199">
-																<ReferenceList>
-																	<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-																		<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-																	</Reference>
-																</ReferenceList>
-															</EffectSlot>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-										</AuxBus>
-									</ChildrenList>
-								</Bus>
+								<AuxBus Name="Reverb_Gen" ID="{9CE676D1-3FB5-4376-A2FA-31ECF9500B41}">
+									<PropertyList>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{24C6F60F-8DDD-4B32-927A-36977854F4DA}" ShortID="462398199">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

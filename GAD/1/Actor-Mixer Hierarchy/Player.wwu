@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{82647729-E809-404D-B651-1A1E3C620464}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Player" ID="{82647729-E809-404D-B651-1A1E3C620464}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Player_foley" ID="{882EBB0B-0254-45C5-92D1-B67E5A468BD4}" ShortID="559069418">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Foley_cloth" ID="{9A3A9699-2BC9-4C6C-A623-A1754FA109E5}" ShortID="468648068">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+								</Reference>
+							</ReferenceList>
+						</ActorMixer>
+						<ActorMixer Name="Foley_footstep" ID="{8827C4C9-D1D0-4E58-A0EB-DD6260AE94A3}" ShortID="656136079">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Foley_fs_run" ID="{4F17618A-D3EB-42B3-9838-8D4F74BAC8D9}" ShortID="466129463">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Highheel" ID="{4447962E-54CF-4E38-9951-17853BECE141}" WorkUnitID="{DAC33C7C-BE28-4824-B547-1FA5F43FA72B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Shoetype" ID="{CC7204EC-E23F-4C0C-937B-5F00BEA52A43}" WorkUnitID="{DAC33C7C-BE28-4824-B547-1FA5F43FA72B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="Foley_fs_run_highheel" ID="{A37E4C37-9D58-4AFE-AFE0-79EFF691E790}" ShortID="232616931">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Dirt" ID="{9A16BBA7-5552-4115-8CA1-6F5F07F1DB42}" WorkUnitID="{DAC33C7C-BE28-4824-B547-1FA5F43FA72B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Materials" ID="{3A51EA47-38EE-4A4A-8F20-831FEE305EA0}" WorkUnitID="{DAC33C7C-BE28-4824-B547-1FA5F43FA72B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Run_Highheel_Dirt" ID="{1100EA69-908F-4F13-ADE5-BCC2EBABBE8C}" ShortID="633967083">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FOL_FS_Run_Highheel_Dirt_01" ID="{F66FD7EB-F49E-4590-9E09-5E2EDE8D3A8A}" ShortID="259716888">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Dirt_01" ID="{67CE76A7-5CBA-46C3-8CE2-1771DF8C871E}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Dirt_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1058588354"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Dirt_01" ID="{67CE76A7-5CBA-46C3-8CE2-1771DF8C871E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Dirt_02" ID="{ADE57F84-6229-4ABB-B6D4-8C4C8F75DB48}" ShortID="203672356">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Dirt_02" ID="{A431A343-9C99-4B3F-B582-C50684FDC301}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Dirt_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="91886477"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Dirt_02" ID="{A431A343-9C99-4B3F-B582-C50684FDC301}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Dirt_03" ID="{768AECC0-A95C-4773-9ED7-B35CA7E9185A}" ShortID="18581960">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Dirt_03" ID="{B76F6289-F340-48F6-A224-C528B0A08A4D}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Dirt_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="269767627"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Dirt_03" ID="{B76F6289-F340-48F6-A224-C528B0A08A4D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Dirt_04" ID="{5D7859D5-8CBB-43B8-A7F5-5F8CC349C72A}" ShortID="1021954303">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Dirt_04" ID="{5272DEDB-291B-4BEA-BB40-E59492F0C16F}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Dirt_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="101251074"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Dirt_04" ID="{5272DEDB-291B-4BEA-BB40-E59492F0C16F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Dirt_05" ID="{DE3C3CB0-F540-48CA-BC73-3CC2C1335BF8}" ShortID="1038345047">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Dirt_05" ID="{8AFED4DB-38E2-4075-8185-EA8F4E38D8A3}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Dirt_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="183805138"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Dirt_05" ID="{8AFED4DB-38E2-4075-8185-EA8F4E38D8A3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Dirt_06" ID="{303A7AFA-10EF-4744-8088-2693058C75EE}" ShortID="1006721760">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Dirt_06" ID="{D5581E5D-9AFC-45A0-ADAE-78BEA5F41D4B}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Dirt_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="342661024"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Dirt_06" ID="{D5581E5D-9AFC-45A0-ADAE-78BEA5F41D4B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Dirt_07" ID="{DB28953D-8804-457D-8258-45A848E3590F}" ShortID="354895682">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Dirt_07" ID="{D3BC20B2-37A7-42EF-88F5-BA7681E7AA0F}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Dirt_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="767623810"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Dirt_07" ID="{D3BC20B2-37A7-42EF-88F5-BA7681E7AA0F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Dirt_08" ID="{3B2D7ABA-40D5-4362-BEDB-AFD63D7FA5FE}" ShortID="264225658">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Dirt_08" ID="{1D51BFB2-303A-4491-81D6-C622C9771683}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Dirt_08.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="534451528"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Dirt_08" ID="{1D51BFB2-303A-4491-81D6-C622C9771683}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Run_Highheel_Grass" ID="{5CD051EC-D29E-47B4-8FA9-AAC44812D78E}" ShortID="399559460">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FOL_FS_Run_Highheel_Grass_01" ID="{AE62394B-6132-4B99-9C63-30B792E603B1}" ShortID="537378059">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Grass_01" ID="{CB957382-CD48-4776-89DC-453F5EA7E92E}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Grass_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="936895555"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Grass_01" ID="{CB957382-CD48-4776-89DC-453F5EA7E92E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Grass_02" ID="{47D33C8B-4107-45FB-98E4-14E4FE21BE98}" ShortID="1012830789">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Grass_02" ID="{F44A4A5E-C501-4D9B-AE73-44DA5BFE3BB7}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Grass_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="230554754"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Grass_02" ID="{F44A4A5E-C501-4D9B-AE73-44DA5BFE3BB7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Grass_03" ID="{A6D54A87-23EF-4843-891E-CD8EF64FAB63}" ShortID="502585762">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Grass_03" ID="{0E13948A-4F2C-417B-B529-6ED90A341F13}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Grass_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="115848369"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Grass_03" ID="{0E13948A-4F2C-417B-B529-6ED90A341F13}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Grass_04" ID="{6A7A38CE-B1B6-4BEF-A433-77B1AC0DCB57}" ShortID="877011628">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Grass_04" ID="{9B65331F-6C87-474B-80B0-ADC4B78FF7E0}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Grass_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="507866171"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Grass_04" ID="{9B65331F-6C87-474B-80B0-ADC4B78FF7E0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Grass_05" ID="{7A1BED39-B4B3-4EA8-A939-1464C8F8F4B5}" ShortID="801822042">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Grass_05" ID="{950A7FAB-1522-454E-9383-D7EDE4AE1CC4}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Grass_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="878280784"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Grass_05" ID="{950A7FAB-1522-454E-9383-D7EDE4AE1CC4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Grass_06" ID="{67E3FA5D-CAE1-4E5A-85B3-FFF6414FE1C4}" ShortID="497176139">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Grass_06" ID="{0C26262E-58CD-4E53-B9CD-12AD6B7FAF09}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Grass_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="176331714"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Grass_06" ID="{0C26262E-58CD-4E53-B9CD-12AD6B7FAF09}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Grass_07" ID="{41A44B52-D99C-4A00-971A-BD78B8C7230B}" ShortID="748890497">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Grass_07" ID="{FA53B3D6-789E-454C-B07D-6EE67257B18A}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Grass_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="890210655"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Grass_07" ID="{FA53B3D6-789E-454C-B07D-6EE67257B18A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Grass_08" ID="{C994F32E-FC62-4DE0-9FE1-7464F16229AD}" ShortID="919609055">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Grass_08" ID="{560D2731-0377-4A5F-A335-3F9E3DC462C9}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Grass_08.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="410791941"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Grass_08" ID="{560D2731-0377-4A5F-A335-3F9E3DC462C9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Grass_09" ID="{0784AB27-7626-438E-B486-8FC65B6DCCDE}" ShortID="873498158">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Grass_09" ID="{2C666675-70BC-4CDD-A4FA-5E943E170511}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Grass_09.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1004348759"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Grass_09" ID="{2C666675-70BC-4CDD-A4FA-5E943E170511}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Run_Highheel_Rock" ID="{098853FF-07F4-4433-B75D-702206A9D8CC}" ShortID="748586843">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FOL_FS_Run_Highheel_Rock_01" ID="{236D83E3-FF67-4B67-BBEC-DABD8A6B4BE5}" ShortID="909378476">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Rock_01" ID="{C68FB472-3623-48DF-BAFB-ECF657D5456E}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Rock_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="947667563"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Rock_01" ID="{C68FB472-3623-48DF-BAFB-ECF657D5456E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Rock_02" ID="{167F742E-0209-4C10-BBBF-6C27ED678CEA}" ShortID="196488660">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Rock_02" ID="{156FEF33-2F22-4FEA-A3C0-DB2B3CC72FCF}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Rock_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="327481197"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Rock_02" ID="{156FEF33-2F22-4FEA-A3C0-DB2B3CC72FCF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Rock_03" ID="{9D71672A-FB4E-4E8F-B8FB-B1E02DE67714}" ShortID="561069081">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Rock_03" ID="{8823816A-DD47-4247-B1EC-3E4CE93F1279}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Rock_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="794042248"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Rock_03" ID="{8823816A-DD47-4247-B1EC-3E4CE93F1279}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Rock_04" ID="{B639C870-DC68-4BEE-A1C1-54AB6B6B5E44}" ShortID="398028573">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Rock_04" ID="{C66F941E-9CBB-422E-A8C2-51E300C07A0F}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Rock_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="852904437"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Rock_04" ID="{C66F941E-9CBB-422E-A8C2-51E300C07A0F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Rock_05" ID="{F7A967A8-B985-4B46-9DD9-2060BF207D01}" ShortID="87796234">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Rock_05" ID="{C3E72F62-7F76-4106-8FBD-FF042A78CADA}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Rock_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="560063309"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Rock_05" ID="{C3E72F62-7F76-4106-8FBD-FF042A78CADA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Rock_06" ID="{294D7F92-0776-4423-827F-42D768418096}" ShortID="229393762">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Rock_06" ID="{1FAC665E-BD37-46D8-ADC9-51F319B8113C}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Rock_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="93531905"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Rock_06" ID="{1FAC665E-BD37-46D8-ADC9-51F319B8113C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Rock_07" ID="{178EF5BB-8DC2-4288-8773-D77D3188D51B}" ShortID="1072432694">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Rock_07" ID="{0FE3F8A7-78DA-4556-A968-335674FB8ADD}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Rock_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="409344884"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Rock_07" ID="{0FE3F8A7-78DA-4556-A968-335674FB8ADD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Rock_08" ID="{944B2302-780E-4407-BCA8-5965EAB8C551}" ShortID="719440315">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Rock_08" ID="{85D53B58-8694-4D98-BD0F-A61CE380E401}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Rock_08.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="454740363"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Rock_08" ID="{85D53B58-8694-4D98-BD0F-A61CE380E401}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Rock_09" ID="{2A4C1671-B515-4166-9F79-BF34CECF9260}" ShortID="287708253">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Rock_09" ID="{C9FE71D2-3DA9-4B7E-A43C-CE07AECE2AF0}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Rock_09.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="886627023"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Rock_09" ID="{C9FE71D2-3DA9-4B7E-A43C-CE07AECE2AF0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Run_Highheel_Wood" ID="{4DF0E053-5D8A-4A0F-B6B6-4DC940506414}" ShortID="274515614">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FOL_FS_Run_Highheel_Wood_01" ID="{4E10169A-4313-4B99-8718-4B69CFDF52F6}" ShortID="708800569">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Wood_01" ID="{75B4C67C-9B76-401C-9BBC-E7ADA4AB5156}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Wood_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="788813096"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Wood_01" ID="{75B4C67C-9B76-401C-9BBC-E7ADA4AB5156}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Wood_02" ID="{45EA91DA-B433-4AF2-B6F8-5286FEE81FCC}" ShortID="152988404">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Wood_02" ID="{5D70A207-F4A1-444C-8AA0-1233CAE43993}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Wood_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="225079434"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Wood_02" ID="{5D70A207-F4A1-444C-8AA0-1233CAE43993}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Wood_03" ID="{A9900EDF-E5E1-498B-A21D-430968C75400}" ShortID="434313794">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Wood_03" ID="{D4E00330-9EB6-4F6A-9C23-CD9944B91603}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Wood_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="423636358"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Wood_03" ID="{D4E00330-9EB6-4F6A-9C23-CD9944B91603}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Wood_04" ID="{EFD6DDB4-4588-42CC-8902-CB9772EADC81}" ShortID="1053441944">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Wood_04" ID="{678C2A13-2626-44B8-B4DD-BE6ED61C5931}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Wood_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="924703548"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Wood_04" ID="{678C2A13-2626-44B8-B4DD-BE6ED61C5931}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Wood_05" ID="{0B60CF54-8F6D-4EB1-9A10-BD52DF66B2F3}" ShortID="774574893">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Wood_05" ID="{BC361358-8656-484F-9E7F-6902B3C77D7D}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Wood_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="865400453"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Wood_05" ID="{BC361358-8656-484F-9E7F-6902B3C77D7D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Wood_06" ID="{250C073B-F606-4296-8BD5-06F142B5060B}" ShortID="803045984">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Wood_06" ID="{6F2D5926-E92A-4DAF-A7D1-DC5266E659EC}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Wood_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="923608324"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Wood_06" ID="{6F2D5926-E92A-4DAF-A7D1-DC5266E659EC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Wood_07" ID="{1E18B74F-95F6-435E-B7CB-E39E2BB7C68C}" ShortID="141183865">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Wood_07" ID="{A1371A58-C656-400D-B21C-FFE29030F35F}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Wood_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="740735677"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Wood_07" ID="{A1371A58-C656-400D-B21C-FFE29030F35F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Wood_08" ID="{71E7ACBD-6A7F-49C6-AAF2-C3CFEBB27092}" ShortID="333671163">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Wood_08" ID="{B0B2C26D-B273-44E8-9F38-966650D822B8}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Wood_08.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="280362997"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Wood_08" ID="{B0B2C26D-B273-44E8-9F38-966650D822B8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_FS_Run_Highheel_Wood_09" ID="{223BE7F7-CFF6-4E69-B4E2-ECBDF9FE2C89}" ShortID="578797667">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9BC4C457-C972-4EA1-8223-9BBB07C19577}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C1D469A6-E5B7-4835-96E4-F54F0A0EE760}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_FS_Run_Highheel_Wood_09" ID="{394451CB-9398-40CD-8251-F08567E33D0B}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_FS_Run_Highheel_Wood_09.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="138846050"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_FS_Run_Highheel_Wood_09" ID="{394451CB-9398-40CD-8251-F08567E33D0B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Run_Highheel_Wood" ID="{4DF0E053-5D8A-4A0F-B6B6-4DC940506414}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Run_Highheel_Dirt" ID="{1100EA69-908F-4F13-ADE5-BCC2EBABBE8C}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Run_Highheel_Grass" ID="{5CD051EC-D29E-47B4-8FA9-AAC44812D78E}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Run_Highheel_Rock" ID="{098853FF-07F4-4433-B75D-702206A9D8CC}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Grass" ID="{DE836C05-9FD4-4C84-9F54-37D5A6E0E8C6}"/>
+														<ItemList>
+															<ItemRef Name="Run_Highheel_Grass" ID="{5CD051EC-D29E-47B4-8FA9-AAC44812D78E}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dirt" ID="{9A16BBA7-5552-4115-8CA1-6F5F07F1DB42}"/>
+														<ItemList>
+															<ItemRef Name="Run_Highheel_Dirt" ID="{1100EA69-908F-4F13-ADE5-BCC2EBABBE8C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Rock" ID="{7D91E5B6-B8EA-4D2D-BA58-91A771839D6D}"/>
+														<ItemList>
+															<ItemRef Name="Run_Highheel_Rock" ID="{098853FF-07F4-4433-B75D-702206A9D8CC}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Wood" ID="{36AEE9B7-5A1C-442C-9D1A-E9C2BA0CABF0}"/>
+														<ItemList>
+															<ItemRef Name="Run_Highheel_Wood" ID="{4DF0E053-5D8A-4A0F-B6B6-4DC940506414}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Foley_fs_run_highheel" ID="{A37E4C37-9D58-4AFE-AFE0-79EFF691E790}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Highheel" ID="{4447962E-54CF-4E38-9951-17853BECE141}"/>
+												<ItemList>
+													<ItemRef Name="Foley_fs_run_highheel" ID="{A37E4C37-9D58-4AFE-AFE0-79EFF691E790}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

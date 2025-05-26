@@ -10,17 +10,17 @@
     "Type": "Bus",
     "GUID": "{9CE676D1-3FB5-4376-A2FA-31ECF9500B41}",
     "Language": "SFX",
-    "Hash": "{0DACEADD-B829-A5DF-13B0-DD867B55C767}",
+    "Hash": "{4A5F5E22-A19F-9825-F52B-2C0BF0B85DA7}",
     "ObjectPath": "Reverb_Gen",
     "ShortName": "Reverb_Gen",
     "Path": "Bus/31/Reverb_Gen.bnk",
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "2513915904",
-       "Name": "Hall_Large",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large",
-       "GUID": "{6D154498-FF6D-4823-96FC-56841B70E079}",
+       "Id": "3164629247",
+       "Name": "Holy",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Cathedrals\\Holy",
+       "GUID": "{CC7B8638-C670-4AD5-B3FB-331EA81037F6}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -30,12 +30,12 @@
      {
       "Id": "3119399198",
       "Name": "Reverb_Gen",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AuBus\\Reverb\\Reverb_Gen",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb\\Reverb_Gen",
       "GUID": "{9CE676D1-3FB5-4376-A2FA-31ECF9500B41}",
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "2513915904"
+         "Id": "3164629247"
         }
        ]
       }
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{A4425BF5-A8BE-27C5-A815-0C763529374B}"
+  "FileHash": "{3752B175-5C7F-B01B-9D86-389B0D13D852}"
  }
 }

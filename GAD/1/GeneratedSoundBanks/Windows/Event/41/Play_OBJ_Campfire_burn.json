@@ -6,14 +6,14 @@
   "SoundBankVersion": "154",
   "SoundBanks": [
    {
-    "Id": "3974548175",
+    "Id": "4184926149",
     "Type": "Event",
     "GUID": "{2A26769F-EA3B-4410-9B4E-56EB881D1622}",
     "Language": "SFX",
-    "Hash": "{0122C63A-2358-E620-3039-2B66E19994C7}",
-    "ObjectPath": "Play_OBJ_Campfire",
-    "ShortName": "Play_OBJ_Campfire",
-    "Path": "Event/39/Play_OBJ_Campfire.bnk",
+    "Hash": "{D4C4F992-3786-8A24-AB62-50E940752877}",
+    "ObjectPath": "Play_OBJ_Campfire_burn",
+    "ShortName": "Play_OBJ_Campfire_burn",
+    "Path": "Event/41/Play_OBJ_Campfire_burn.bnk",
     "Media": [
      {
       "Id": "102531270",
@@ -153,11 +153,11 @@
     ],
     "Events": [
      {
-      "Id": "3974548175",
-      "Name": "Play_OBJ_Campfire",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_OBJ_Campfire",
+      "Id": "4184926149",
+      "Name": "Play_OBJ_Campfire_burn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_OBJ_Campfire_burn",
       "GUID": "{2A26769F-EA3B-4410-9B4E-56EB881D1622}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "1000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -210,6 +210,6 @@
     ]
    }
   ],
-  "FileHash": "{B595A625-60B4-D13D-AF1F-94052363694F}"
+  "FileHash": "{E023FEC2-CF0C-D2C6-44BA-682DA66EC247}"
  }
 }
